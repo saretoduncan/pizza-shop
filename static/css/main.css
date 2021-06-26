@@ -9,3 +9,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.topDiv {
+  background-image: url("../images/7c91a552f426f598a284beb3b09c7c08.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
