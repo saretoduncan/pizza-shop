@@ -53,5 +53,30 @@ body {
 
 .butt a {
   color: #f3a446 !important;
-  font-size: 20px;
+  font-size: 30px;
+}
+
+.menu {
+  color: #f3a446
+}
+
+.pizz-fig {
+  background-color: #1d1d1d;
+  height: 35vh;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #414141
+}
+
+.pizz-fig img {
+  width: 70%;
+}
+
+.bg {
+  background-color: #f3a446;
+}
+
+.pizz-fig div {
+  bottom: 2px;
+  left: 0;
+  width: 100%
 }
