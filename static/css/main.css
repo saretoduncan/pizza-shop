@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('../images/istockphoto-820860100-170667a.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
