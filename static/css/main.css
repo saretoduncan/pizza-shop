@@ -62,13 +62,18 @@ body {
 
 .pizz-fig {
   background-color: #1d1d1d;
-  height: 35vh;
   border-radius: 10px;
-  box-shadow: 0 0 10px #414141
+  box-shadow: 0 0 10px #414141;
+  transition: .5s ease;
+}
+
+.pizz-fig:hover {
+  background-color: #a06235;
+  transition: .5s ease;
 }
 
 .pizz-fig img {
-  width: 70%;
+  width: 60%;
 }
 
 .bg {
@@ -76,7 +81,25 @@ body {
 }
 
 .pizz-fig div {
-  bottom: 2px;
+  bottom: 10px;
   left: 0;
-  width: 100%
+  width: 100%;
+}
+
+.del {
+  background-color: #1d1d1d;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #1d1d1d;
+}
+
+.ft-list li {
+  list-style: none;
+  padding: 2px 10px;
+}
+
+.ft-list li a {
+  color: #f3a446;
 }
