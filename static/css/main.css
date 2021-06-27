@@ -136,6 +136,10 @@ footer {
   background-color: #1d1d1d;
 }
 
+input {
+  width: 20%;
+}
+
 select {
   width: 50% !important;
   margin: 0 auto 5px;
