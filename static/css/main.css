@@ -12,6 +12,17 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
+.pop-cart {
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.493);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
 .topDiv {
   background-image: url("../images/7c91a552f426f598a284beb3b09c7c08.jpg");
   background-size: cover;
@@ -102,4 +113,26 @@ footer {
 
 .ft-list li a {
   color: #f3a446;
+}
+
+.pop-fig {
+  max-width: 400px;
+}
+
+.pop-fig i {
+  right: 10px;
+  top: 10px;
+}
+
+.pop-fig img {
+  width: 40%;
+}
+
+.pop-fig:hover {
+  background-color: #1d1d1d;
+}
+
+select {
+  width: 50% !important;
+  margin: 0 auto 5px;
 }
