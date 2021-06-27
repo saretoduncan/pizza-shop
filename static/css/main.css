@@ -13,14 +13,18 @@ body {
 }
 
 .pop-cart {
-  display: flex;
-  position: absolute;
+  display: none;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.493);
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 2;
+}
+
+.flx {
+  display: flex;
 }
 
 .topDiv {
