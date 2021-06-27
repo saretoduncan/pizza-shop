@@ -12,7 +12,31 @@
   <title>Pizza-store</title>
 </head>
 
-<body class="d-flex flex-column m-auto">
+<body class=" position-relative d-flex flex-column m-auto">
+  <div class="pop-cart justify-content-center align-items-center">
+    <div class=" position-relative  pizz-fig pop-fig">
+      <i class="fa fa-times-circle position-absolute fs-3 text-danger" aria-hidden="true"></i>
+      <img src="./static/images/cheese.jpg" alt="" class=" m-auto d-block pt-3 rounded">
+      <h3 class=" text-center text-light pt-2">Cheese<br> Pizza</h3>
+
+      <select class="form-select" aria-label="Default select example">
+        <option  selected>PIZZA TOPPINGS</option>
+        <option value="1">Potato  <span class=" font-monospace">100</span>/=</option>
+        <option value="2">Broccolini   <span class="font-monospace">200</span>/=</option>
+        <option value="3">capsicum   <span class=" font-monospace">300</span>/=</option>
+      </select>
+      <div class="d-flex justify-content-center "> <span class='text-light fs-4'>size: </span>
+        <button class="btn btn-light ms-2 mb-1" autofocus>S</button>
+        <button class="btn btn-light ms-2 mb-1 ">M</button>
+        <button class="btn btn-light ms-2 mb-1">L</button>
+      </div>
+      <p class=" text-light text-center fs-4">Price: <span class="menu font-monospace">500</span>/=</p>
+      <div class=" d-flex justify-content-center"><button class="btn bg ">Add To Cart</button></div>
+
+    </div>
+
+
+  </div>
   <div class="container-fluid position-relative d-flex flex-column justify-content-center align-items-center topDiv ">
     <nav class="navbar navbar-light bg-transparent position-absolute tp-logo">
       <div class="container-fluid">
@@ -56,7 +80,7 @@
       <div class="col-12 col-sm-6 col-lg-3 mt-4">
         <div class="container position-relative  pizz-fig">
           <img src="./static/images/hawaian.jpg" alt="" class=" d-block m-auto pt-3 rounded">
-          <h3 class="text-center text-light pt-2">Hawaian <br>Pizza</h3>
+          <h3 class="text-center text-light pt-2">HAWAIAN <br>Pizza</h3>
           <p class="text-center text-light ">STARTING <span class="menu">500/=</span></p>
           <div class="  d-flex justify-content-center"><button class="btn bg ">order now</button></div>
 
