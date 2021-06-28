@@ -7,34 +7,23 @@ const quantity = document.querySelector(".quantity")
 
 
 
-class Menu {
-  constructor(sizePrice, toppingPrice, quantity, delivery) {
-    this.sizePrice = sizePrice;
-    this.toppingPrice = toppingPrice;
-    this.quantity = quantity;
-    this.delivery = delivery;
-  }
-  get totalPrice() {
-    return ((this.sizePrice + this.toppingPrice) * this.quantity) + this.delivery;
-  }
-}
 
-
+//order button on the menuList
 menuList.forEach(item => {
 
-  item.addEventListener('click', (e) => {
-    let target = e.target;
+    item.addEventListener('click', (e) => {
+      let target = e.target;
 
-    let order = target.classList.contains("order");
-    if (order) {
-      cartList.classList.add("flx");
+      let order = target.classList.contains("order");
+      if (order) {
+        cartList.classList.add("flx");
 
 
-    }
+      }
 
-  });
-})
-
+    });
+  })
+  //order button
 document.querySelectorAll(".order").forEach(item => {
   item.addEventListener('click', (e) => {
     let target = e.target;
@@ -48,7 +37,7 @@ document.querySelectorAll(".order").forEach(item => {
   })
 })
 
-
+//closing buttons
 closeBtn.forEach(item => {
 
   item.addEventListener('click', e => {
@@ -61,7 +50,7 @@ closeBtn.forEach(item => {
   })
 })
 
-
+//pizza topping price function
 let topPrice = () => {
   let toppingPrice = 0;
   if (document.querySelector("#flexRadioDefault1").checked) {
@@ -74,6 +63,7 @@ let topPrice = () => {
   return toppingPrice;
 }
 
+//pizza size price function
 let sizePrice = () => {
   let sizePr = 0;
   if (document.querySelector("#size1").checked) {
@@ -86,7 +76,20 @@ let sizePrice = () => {
   return sizePr;
 }
 
+//object constructor for payment data
+class Menu {
+  constructor(sizePrice, toppingPrice, quantity, delivery) {
+    this.sizePrice = sizePrice;
+    this.toppingPrice = toppingPrice;
+    this.quantity = quantity;
+    this.delivery = delivery;
+  }
+  get totalPrice() {
+    return ((this.sizePrice + this.toppingPrice) * this.quantity) + this.delivery;
+  }
+}
 
+/// add to cart button
 document.querySelector(".addCat").addEventListener('click', e => {
   document.querySelector(".pop-ot").classList.add("flx");
   let quantity = parseInt(document.querySelector(".quantity").value);
@@ -99,6 +102,8 @@ document.querySelector(".addCat").addEventListener('click', e => {
   cartList.classList.remove('flx');
 
 })
+
+///payment button
 document.querySelector(".pay").addEventListener('click', () => {
   let name = document.querySelector("#name").value;
   let location = document.querySelector('#location').value;
